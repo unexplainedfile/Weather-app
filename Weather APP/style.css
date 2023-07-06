@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: "Roboto", sans-serif;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container::before{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background-image: url("bg.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    opacity: 0.5;
+}
+.weather{
+    z-index: 2;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+.weather1{
+    font-size: 5rem;
+}
+.weather p{
+    font-size: 2rem;
+}
+.weather span{
+    font-size: 0.85rem;
+}
+nav{
+    /* padding: 20px; */
+    height: 20px;
+    position: absolute;
+    bottom: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.search{
+    padding: 10px;
+    border: 1.5px solid rgb(250, 197, 98);
+    border-radius: 20px;
+    height: 18px;
+    outline: none;
+   background-color: black;
+    color: white;
+    font-size: 1.1rem;
+}
+button{
+    margin-left: 20px;
+    padding: 0px;
+    border: none;
+    background-color: rgba(0, 0, 0, 0);
+    color: rgb(250, 197, 98);
+    font-size: 1.5rem;
+    letter-spacing: 2px;
+    transition: color 0.7s;
+}
+button:hover{
+    cursor: pointer;
+    color: rosybrown;
+    
+}
+nav form{
+    grid-template-columns: 6fr 1fr;
+    display: grid;
+}
+
+.weather3 span{
+    margin: 0.3rem;
+}
+.weather3 img{
+    width: 1.9rem;
+}
+.weather > div{
+    margin: 5px;
+}
